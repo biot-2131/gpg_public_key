@@ -1,8 +1,8 @@
 # gnupg public key
 
-This repo contains the gnupg public key associated with this account.
+This repo contains the gnupg public key associated with this account and information about the ways you can add it to your keychain.
 
-## Key ID's
+## Key details
 ``` bash
 $ gpg --list-keys --keyid-format LONG 121760096+biot-2131@users.noreply.github.com
 
