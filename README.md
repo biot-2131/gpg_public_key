@@ -12,7 +12,7 @@ uid                 [ultimate] biot-2131 <121760096+biot-2131@users.noreply.gith
 sub   rsa4096/A2AAB8A9C02E065E 2023-01-02 [E]
 ```
 
-## Download & import key file 
+## Download & import key 
 
 ``` bash
 $ wget https://raw.githubusercontent.com/biot-2131/gpg_public_key/main/121760096+biot-2131@users.noreply.github.com_public.asc
