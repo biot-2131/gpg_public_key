@@ -1,6 +1,6 @@
 # gnupg public key
 
-This repo contains the gnupg public key associated with this account and information about the ways you can add it to your keychain.
+This repo contains the GnuPG public key associated with this account and information on ways to add it to your keychain.
 
 ## Key details
 ``` bash
@@ -12,22 +12,26 @@ uid                 [ultimate] biot-2131 <121760096+biot-2131@users.noreply.gith
 sub   rsa4096/A2AAB8A9C02E065E 2023-01-02 [E]
 ```
 
-## Download & import key 
+## Keyserver
+``` bash
+$ gpg --keyserver http://keyserver.ubuntu.com --search-key B39CBE4418F72D5665399D9D1D55F46A1B5331BA
 
+$ gpg --keyserver http://keyserver.ubuntu.com --recv-keys B39CBE4418F72D5665399D9D1D55F46A1B5331BA
+
+$ gpg --list-keys --keyid-format LONG 121760096+biot-2131@users.noreply.
+```
+
+## Download & import key 
 ``` bash
 $ wget https://raw.githubusercontent.com/biot-2131/gpg_public_key/main/121760096+biot-2131@users.noreply.github.com_public.asc
 
 $ gpg --import 121760096+biot-2131@users.noreply.github.com_public.asc
 
 $ gpg --list-keys --keyid-format LONG 121760096+biot-2131@users.noreply.
-
 ```
 
 ## Cut & paste key
-
 ```bash 
-$ cat ~/.gnupg/121760096+biot-2131@users.noreply.github.com_public.asc 
-
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGOyU1ABEADDbKqGeWqzXX4DkEsm2n4f/Y8199HpwpVSSJnVp9AYr3ylup8H
@@ -80,5 +84,4 @@ lBoxV4MbKpbnz00nujMtPtzUb8f8PVsfrChZIUtEmqWErZKWzKXz/jmQJf0+fjlH
 fVQB5l5yIPkkOl11Lz8YNwlSLZ8=
 =978V
 -----END PGP PUBLIC KEY BLOCK-----
-
 ```
